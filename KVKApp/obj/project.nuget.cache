@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "nE+1Qa59awPHqrHgwXl7tVZ75ZNL76mkEnYt7klwDGzSQK3hbjtq3QJ5W5BDPthhbNwj4zYT+Yrx/uFPW6blkw==",
+  "success": true,
+  "projectFilePath": "E:\\Source\\Workspaces\\KVKApp\\KVKApp\\KVKApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Luxon\\.nuget\\packages\\acr.userdialogs\\7.1.0.452\\acr.userdialogs.7.1.0.452.nupkg.sha512",
+    "C:\\Users\\Luxon\\.nuget\\packages\\autofac\\5.2.0\\autofac.5.2.0.nupkg.sha512",
+    "C:\\Users\\Luxon\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Luxon\\.nuget\\packages\\refractored.mvvmhelpers\\1.6.2\\refractored.mvvmhelpers.1.6.2.nupkg.sha512",
+    "C:\\Users\\Luxon\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Luxon\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\Luxon\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512"
+  ],
+  "logs": []
+}

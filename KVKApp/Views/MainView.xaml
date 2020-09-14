@@ -1,0 +1,43 @@
+﻿<Window x:Class="KVKApp.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KVKApp.Views"
+        mc:Ignorable="d"
+        Title="MainView" Height="720" Width="1080">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="Bisque">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32">KVK API HORECA</Label>
+        </Grid>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <!--<Label>Branche Nummer</Label>
+            <TextBox HorizontalAlignment="Left" Width="100" Text="{Binding BranchNumber}"/>
+            <Label>Vanaf</Label>
+            <DatePicker SelectedDate="{Binding From}"/>
+            <Label>Tot</Label>
+            <DatePicker SelectedDate="{Binding Till}"/>-->
+            <Button Content="Data Ophalen" Background="Azure" Width="144" Height="48" Margin="0,12" Command="{Binding ApiCommand}"></Button>
+            <Button Content="Exporteer" Background="Azure" Width="144" Height="48" Margin="0,12" IsEnabled="{Binding ButtonPrintEnabled}" Command="{Binding PrintCommand}"></Button>
+        </StackPanel>
+        <DataGrid x:Name="dgrid" Grid.Row="2" ItemsSource="{Binding Companies}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="KvK Nummer" Binding="{Binding KvkNumber}" />
+                <DataGridTextColumn Header="Business Naam" Binding="{Binding TradeNames.BusinessName}" />
+                <DataGridTextColumn Header="Adres" Binding="{Binding Addresses[0].FullAddress}" />
+                <DataGridTextColumn Header="Branche Nummer" Binding="{Binding BranchNumber}" />
+                <DataGridTextColumn Header="RSIN" Binding="{Binding RSIN}" />
+                <DataGridTextColumn Header="HasEntryInBusinessRegister" Binding="{Binding HasEntryInBusinessRegister}" />
+                <DataGridTextColumn Header="HasNonMailingIndication" Binding="{Binding HasNonMailingIndication}" />
+                <DataGridTextColumn Header="IsLegalPerson" Binding="{Binding IsLegalPerson}" />
+                <DataGridTextColumn Header="IsBranch" Binding="{Binding IsBranch}" />
+                <DataGridTextColumn Header="IsMainBranch" Binding="{Binding IsMainBranch}" />                
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
